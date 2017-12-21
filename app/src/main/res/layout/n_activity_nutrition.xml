@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/myRelativeLayout"
+    tools:context="com.example.joe.cst2335finalgroupproject.n_NutritionTrackerActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/appToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/Theme.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ListView
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/nutrition_listview"
+        android:layout_width="300dp"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/message_text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/progressBar" />
+
+    <FrameLayout
+        android:id="@+id/myFrameLayout"
+        android:layout_width="300dp"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:layout_toRightOf="@id/nutrition_listview"
+        android:id="@+id/wideScreenFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
